@@ -10,6 +10,7 @@ import org.springframework.test.context.ActiveProfiles;
 
 @SpringBootTest
 @ActiveProfiles("test")     
+@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
 class ProduitsApplicationTests {
 
     @Autowired
