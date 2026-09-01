@@ -5,13 +5,11 @@ import com.example.cours.repositorie.ProduitRepository;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-
-
 import org.junit.jupiter.api.*;
-
+import org.springframework.test.context.ActiveProfiles;
 
 @SpringBootTest
-@TestMethodOrder(MethodOrderer.OrderAnnotation.class)
+@ActiveProfiles("test")     
 class ProduitsApplicationTests {
 
     @Autowired
